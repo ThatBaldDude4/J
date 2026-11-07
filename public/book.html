@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Book a pretend escape · J Diddles</title>
+    <meta
+      name="description"
+      content="J Diddles Seafood & Massage is a fictional parody. Explore absurd seafood spa experiences and make pretend reservations. No real services or payments."
+    />
+    <meta name="theme-color" content="#15564f" />
+    <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script type="module" src="/js/app.js"></script>
+  </head>
+  <body data-page="book">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="parody-bar">
+      <span class="tiny-fish" aria-hidden="true">✳</span> A REAL WEBSITE. A
+      FAKE SPA.
+      <span class="bar-long"
+        >All experiences & reservations are just for laughs.</span
+      ><a href="/about.html">The fine print ↗</a>
+    </div>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="J Diddles home"
+        >J Diddles<span>SEAFOOD & MASSAGE</span></a
+      ><button
+        class="menu-toggle"
+        id="menu-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="main-nav"
+      >
+        Menu ☰
+      </button>
+      <nav id="main-nav" aria-label="Main navigation">
+        <a href="/experiences.html">The experiences</a
+        ><a href="/about.html">Our very fishy story</a
+        ><a href="/reservations.html">My reservations</a
+        ><a href="/login.html" id="account-link">Sign in</a
+        ><a class="button small" href="/book.html"
+          >Book a pretend escape <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main id="main">
+      <div class="page-heading">
+        <p class="eyebrow">A RESERVATION FOR YOUR IMAGINATION</p>
+        <h1>Make yourself<br />fictionally comfortable.</h1>
+        <p class="lede">
+          Choose an experience and a pretend time. Nothing will happen in the
+          real world. No payment required.
+        </p>
+      </div>
+      <section class="booking-layout">
+        <div class="form-panel">
+          <div class="auth-prompt" id="booking-auth" hidden>
+            <h2>First, a quick sign-in.</h2>
+            <p>You’ll need an account to save your pretend reservation.</p>
+            <a class="button" href="/login.html?next=book"
+              >Sign in to book ↗</a
+            >
+            <p>
+              <a href="/register.html?next=book">Create an account instead</a>
+            </p>
+          </div>
+          <form method="post" id="booking-form" hidden>
+            <label for="experience">1. Pick your imaginary experience</label
+            ><select name="experience" id="experience" required>
+              <option value="">Choose an experience</option>
+              <option value="surf-and-soothe">Surf & Soothe</option>
+              <option value="fin-ish-line">The Fin-ish Line</option>
+              <option value="hot-shell-society">Hot Shell Society</option>
+            </select>
+            <div class="form-row">
+              <div>
+                <label for="date">2. Choose a date</label
+                ><input
+                  type="date"
+                  id="date"
+                  name="date"
+                  required
+                  aria-describedby="date-hint"
+                />
+              </div>
+              <div>
+                <label for="guests">Guests</label
+                ><select id="guests" name="guests">
+                  <option value="1">1 guest</option>
+                  <option value="2">2 guests</option>
+                  <option value="3">3 guests</option>
+                  <option value="4">4 guests</option>
+                </select>
+              </div>
+            </div>
+            <small id="date-hint"
+              >Tomorrow through the next 30 days. All times are UTC.</small
+            >
+            <fieldset class="time-fieldset">
+              <legend>3. Pick a pretend time <span>(UTC)</span></legend>
+              <p id="availability-message" role="status" aria-live="polite">
+                Choose a date to see availability.
+              </p>
+              <div class="time-grid" id="time-slots"></div>
+            </fieldset>
+            <label class="checkbox-label"
+              ><input type="checkbox" name="parody" required /><span
+                >I understand this only saves a pretend reservation. No real
+                service is booked and I should not travel to any location.</span
+              ></label
+            >
+            <p
+              id="form-message"
+              class="form-message"
+              role="status"
+              aria-live="polite"
+              hidden
+            ></p>
+            <button class="button full" type="submit" disabled>
+              Confirm pretend reservation ↗
+            </button>
+          </form>
+          <p id="booking-loading" role="status">Checking your session…</p>
+        </div>
+        <aside class="booking-aside">
+          <p class="eyebrow">THE NON-BINDING DETAILS</p>
+          <h2>Zero dollars.<br />Zero actual plans.</h2>
+          <img
+            src="/assets/shell.svg"
+            alt="Illustrated imaginary spa shell."
+            width="600"
+            height="400"
+          />
+          <ul class="included">
+            <li>60 fictional minutes per experience</li>
+            <li>Up to 4 guests per reservation</li>
+            <li>6 pretend seats per time, shared across experiences</li>
+            <li>View or cancel anytime in your account</li>
+          </ul>
+          <p>
+            We don’t ask for payment, phone numbers, health information, or
+            special requests.
+          </p>
+        </aside>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div>
+        <a class="brand" href="/">J Diddles<span>SEAFOOD & MASSAGE</span></a>
+        <p>Come for the seafood.<br />Stay for the questionable concept.</p>
+      </div>
+      <div class="footer-right">
+        <p class="eyebrow">100% PARODY. 0% ACTUAL SPA.</p>
+        <p>
+          No services, food, payments, or real appointments.<br />Please don’t
+          travel to a map pin expecting a massage.
+        </p>
+        <div class="footer-links">
+          <a href="/about.html">About the joke</a
+          ><a href="/privacy.html">Privacy & cookies</a
+          ><a href="/terms.html">Terms</a
+          ><button class="text-button" id="cookie-settings" type="button">
+            Cookie info
+          </button>
+        </div>
+      </div>
+      <p class="footer-bottom">
+        An independent fictional business. No affiliation with real people,
+        businesses, or map providers. No fish were employed in the making of
+        this website.
+      </p>
+    </footer>
+    <aside
+      class="cookie-note"
+      id="cookie-note"
+      aria-label="Cookie information"
+      hidden
+    >
+      <div>
+        <strong>Just the necessary cookies.</strong>
+        <p>
+          We use a sign-in cookie and remember when you dismiss this notice. No
+          ads. No analytics. <a href="/privacy.html">Privacy & cookies</a>
+        </p>
+      </div>
+      <button class="button small" id="cookie-dismiss" type="button">
+        Got it
+      </button>
+    </aside>
+    <noscript
+      ><p class="noscript">
+        JavaScript is needed for accounts and pretend bookings. All experiences
+        are fictional.
+      </p></noscript
+    >
+  </body>
+</html>

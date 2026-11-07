@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 600" fill="none">
+  <defs>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#15564f" opacity=".12" />
+    </pattern>
+  </defs>
+  <path fill="#e9bba0" d="M80 570V270C80 20 620 20 620 270v300Z" />
+  <path fill="url(#dots)" d="M80 570V270C80 20 620 20 620 270v300Z" />
+  <path
+    d="M100 430c100-50 160 55 260 0s160 45 240 0M100 470c100-50 160 55 260 0s160 45 240 0M100 510c100-50 160 55 260 0s160 45 240 0"
+    stroke="#f8ecd7"
+    stroke-width="3"
+  />
+  <circle cx="354" cy="216" r="112" fill="#edcb77" />
+  <path
+    d="m350 75 1-28m112 58 20-20m-244 21-19-20m275 132 28-1m-307 1-28-1"
+    stroke="#15564f"
+    stroke-width="3"
+    stroke-linecap="round"
+  />
+  <g stroke="#15564f" stroke-width="4" stroke-linejoin="round">
+    <path d="m169 378 16 153m334-153-16 153" />
+    <path d="M151 344h400v42H151z" fill="#f8ecd7" />
+    <path d="M176 343c-2-40 23-56 73-56h169c28 0 54 26 54 56" fill="#f8ecd7" />
+    <path d="M180 342h282v22H180z" fill="#aec6ad" />
+    <path d="M263 292c10-43 47-58 99-50 43 6 58 31 64 50" fill="#d98769" />
+    <path d="M262 298c-7-32 16-48 47-41 23 5 48 18 53 41" fill="#e9a780" />
+    <circle cx="232" cy="281" r="32" fill="#e9a780" />
+    <path d="M202 281c-5-35 35-44 53-21l-34 9-8 25" fill="#15564f" />
+    <path d="m230 292 10-2m-1 12 9-2" stroke-linecap="round" />
+    <path
+      d="M349 235c-15-37-3-68 35-72 34-4 50 29 81 28l-23 27c-32-6-38-33-59-26 12 11 6 26-4 39"
+      fill="#15564f"
+    />
+    <path
+      d="M382 168c22-13 66-1 86 17l-3 7c-36 2-54-23-83-24Z"
+      fill="#aec6ad"
+    />
+    <path d="m333 235 27-17 9 31-26 11Z" fill="#f8ecd7" />
+    <path d="m365 246 21-22 16 27-24 15Z" fill="#f8ecd7" />
+    <path d="M542 343v168m-41-113h82m-36-57h-47l8-9h66l9 9Z" fill="#edcb77" />
+    <ellipse cx="541" cy="323" rx="41" ry="10" fill="#f8ecd7" />
+    <path
+      d="M530 318c-26-4-25-30-6-33 17-2 19 14 7 18m13 14c22-7 28-35 8-39-16-2-22 11-12 19"
+      stroke="#c4543c"
+      stroke-width="7"
+      stroke-linecap="round"
+    />
+    <path d="m559 274 13-24m-7 28 24-6" stroke="#c4543c" stroke-width="3" />
+    <path
+      d="M135 238c25-39 72-34 94 0-22 34-69 39-94 0Zm0 0-27-21v42Z"
+      fill="#aec6ad"
+    />
+    <circle cx="209" cy="234" r="3" fill="#15564f" stroke="none" />
+    <path d="m173 218-4 40m11-41-4 41" stroke-width="2" />
+    <path
+      d="M483 112c18-23 46-19 60 1-14 21-42 22-60-1Zm0 0-18-13v26Z"
+      fill="#f8ecd7"
+    />
+    <circle cx="530" cy="111" r="2" fill="#15564f" stroke="none" />
+    <path
+      d="m147 177 9-16 10 16-10 16ZM520 420l8-13 8 13-8 13Z"
+      fill="#edcb77"
+    />
+  </g>
+  <path
+    d="M114 548h471"
+    stroke="#15564f"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+  <text
+    x="350"
+    y="586"
+    text-anchor="middle"
+    fill="#15564f"
+    font-family="Georgia,serif"
+    font-size="14"
+    letter-spacing="4"
+  >
+    AN ENTIRELY FICTIONAL ESCAPE
+  </text>
+</svg>

@@ -1,0 +1,20 @@
+{
+  "name": "j-diddles-seafood-and-massage",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "An explicitly fictional seafood spa with pretend reservations.",
+  "engines": {
+    "node": ">=22.14.0"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server/index.js",
+    "dev": "node --env-file-if-exists=.env --watch server/index.js",
+    "test": "node --env-file-if-exists=.env --test tests/*.test.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "pg": "^8.16.3"
+  }
+}
